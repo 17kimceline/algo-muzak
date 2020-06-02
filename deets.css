@@ -1,0 +1,140 @@
+body {
+  background: #74afad;
+}
+.intro{
+  text-align: center;
+  font-size: 25px;
+  font-family:calibri;
+  color: #FFC09D;
+  font-weight: bold;
+  margin: auto;
+  
+}
+god {
+  position: relative;
+  bottom: -20.25vmin;
+}
+
+main {
+  position: relative;
+  margin: auto;
+  height: 25.0vmin;
+  width: 37.5vmin;
+  top: 9.375vmin;
+  z-index: 1;
+}
+.outer {
+  
+  position: relative;
+  margin: auto;
+  background: #FFAC2E;
+
+  z-index: 1;
+  border-radius: 50%;
+	width: 25vmin;
+	height: 25vmin; 
+}
+
+.cheek {
+  position: absolute;
+  bottom: 7.75vmin;
+  
+  top: 13vmin;
+  left: 2vmin;
+  margin: auto;
+  height: 3.125vmin;
+  width: 3.125vmin;
+  background: #FFC09D;
+  border-radius: 6.25vmin;
+  z-index: 3;
+}
+#cheekRight{
+  left: 20vmin;
+}
+.dot{
+  position: absolute;
+  top: 3.75vmin;
+  
+  height: 2.125vmin;
+  width: 2.125vmin;
+  border-radius: 6.25vmin;
+  background: #F09243;
+  z-index: 3;
+}
+#dot1{
+  top: 4.15vmin;
+  left: 5vmin;
+}
+#dot2{
+  top: 5.2vmin;
+  left: 8vmin;
+}
+#dot3{
+  top: 2.15vmin;
+  left: 7vmin;
+}
+.eyes {
+  position: relative;
+  bottom: -7.75vmin;
+  right: 5.8125vmin;
+  top: 13vmin;
+  margin: auto;
+  height: 2.125vmin;
+  width: 2.125vmin;
+  background: #332600;
+  border-radius: 6.25vmin;
+  z-index: 2;
+  animation: blink .6s ease-in-out both alternate infinite;
+}
+.eyes:after {
+  content: "";
+  position: absolute;
+  left: 11.523vmin;
+  height: 2.125vmin;
+  width: 2.125vmin;
+  background: #332600;
+  border-radius: 6.25vmin;
+  animation: blink .6s ease-in-out both alternate infinite;
+}
+.mouth {
+  position: absolute;
+  margin: auto;
+  left: 9.7vmin;
+  top: 16.375vmin;
+  height: 1.25vmin;
+  width: 5.125vmin;
+  background: #332600;
+  border-radius: 0 0 50% 50%;
+  animation: move 4s ease-in-out both alternate infinite;
+}
+.mouth2{
+    position: absolute;
+    margin: auto;
+    left: 9.7vmin;
+    top: 16.375vmin;
+    height: 1.25vmin;
+    width: 5.125vmin;
+    background: #332600;
+    border-radius: 0 0 50% 50%;
+    animation: move 4s ease-in-out both alternate infinite;
+}
+
+/* Keyframes */
+@keyframes blink {
+   from {
+    height: 2.125vmin;
+    width: 2.125vmin; 
+  }
+   to {
+    height: 0vmin;
+    width: 1vmin;
+  }
+}
+@keyframes move {
+  from {
+    transform: translateY(0vmin);
+  }
+  to {
+    transform: translateY(0.825vmin);
+  }
+}
